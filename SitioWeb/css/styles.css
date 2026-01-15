@@ -1,0 +1,207 @@
+/* =========================
+   RESET Y BASE
+========================= */
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #f6f7fb;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   AJUSTES SUAVES (compatible con Bootstrap)
+   - NO tocar .container
+========================= */
+.card { border-radius: 16px; }
+
+/* =========================
+   CONTENEDOR PARA PÁGINAS ANTIGUAS
+   (galeria/contacto/errores)
+========================= */
+.container-custom {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 20px 0 30px;
+}
+
+/* =========================
+   HEADER (páginas antiguas)
+========================= */
+.site-header {
+  background-color: #111827;
+  color: #ffffff;
+  padding: 22px 0;
+  border-bottom: 4px solid #2563eb;
+}
+
+.site-header h1 {
+  margin: 0;
+  text-align: center;
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+}
+
+/* =========================
+   NAVEGACIÓN (páginas antiguas)
+========================= */
+.site-nav { background-color: #0b1220; }
+
+.site-nav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 12px 0;
+  width: min(1100px, 92%);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #e5e7eb;
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.site-nav a:hover {
+  background-color: rgba(37, 99, 235, 0.25);
+  transform: translateY(-2px);
+}
+
+.site-nav a.active {
+  background-color: rgba(37, 99, 235, 0.4);
+  color: #ffffff;
+}
+
+/* =========================
+   CONTENIDO (páginas antiguas)
+========================= */
+main section {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-top: 0;
+  color: #111827;
+}
+
+h3 { margin-top: 20px; }
+
+/* =========================
+   TABLAS (páginas antiguas)
+========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 14px;
+}
+
+th, td {
+  border: 1px solid #e5e7eb;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f3f4f6;
+  font-weight: 700;
+}
+
+/* =========================
+   FORMULARIOS (páginas antiguas)
+========================= */
+form {
+  display: grid;
+  gap: 12px;
+}
+
+label { font-weight: 600; }
+
+input, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-family: inherit;
+}
+
+input:focus, textarea:focus {
+  outline: 3px solid #93c5fd;
+  border-color: #2563eb;
+}
+
+button {
+  width: fit-content;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   GRID / CARDS (GALERÍA antigua)
+========================= */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+}
+
+.card-body { padding: 12px; }
+
+/* =========================
+   FOOTER (páginas antiguas)
+========================= */
+.site-footer {
+  margin-top: 30px;
+  background-color: #111827;
+  color: #ffffff;
+  text-align: center;
+  padding: 18px 0;
+}
+
+/* =========================
+   RESPONSIVE (páginas antiguas)
+========================= */
+@media (max-width: 900px) {
+  .grid-cards { grid-template-columns: 1fr; }
+
+  .site-nav ul { gap: 8px; }
+
+  .site-nav a { padding: 9px 12px; }
+
+  main section { padding: 16px; }
+}

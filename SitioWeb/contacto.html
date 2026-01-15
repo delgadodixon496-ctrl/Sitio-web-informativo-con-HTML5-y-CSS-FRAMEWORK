@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Responsive obligatorio -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contacto - Sitio Web Informativo</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (opcional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <h1>Formulario de Contacto</h1>
+</header>
+
+<nav class="site-nav">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="informacion.html">Información</a></li>
+    <li><a href="galeria.html">Galería</a></li>
+    <li><a href="datos.html">Datos</a></li>
+    <li><a href="contacto.html" class="active">Contacto</a></li>
+  </ul>
+</nav>
+
+<main class="container-custom">
+  <section>
+    <h2>Envíanos un mensaje</h2>
+
+    <form action="#" method="post">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+
+      <label for="correo">Correo electrónico</label>
+      <input id="correo" name="correo" type="email" autocomplete="email" required>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 - Sitio Web Informativo</p>
+</footer>
+
+</body>
+</html>
